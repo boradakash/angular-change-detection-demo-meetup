@@ -14,29 +14,20 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
-        <li
-          class="nav-item"
-          [routerLink]="['/default-strategy']"
-          routerLinkActive
-        >
-          <a class="nav-link active" aria-current="page" >Default</a>
+        <li class="nav-item" routerLink="/default-strategy">
+          <a class="nav-link" aria-current="page">Default</a>
         </li>
-        <li
-          class="nav-item"
-          [routerLink]="['/default-onpush-strategy']"
-          routerLinkActive
-        >
-          <a class="nav-link" >Default & OnPush</a>
+        <li class="nav-item" routerLink="/default-onpush-strategy">
+          <a class="nav-link">Default & OnPush</a>
         </li>
-        <li
-          class="nav-item"
-          [routerLink]="['/onpush-strategy']"
-          routerLinkActive
-        >
+        <li class="nav-item" routerLink="/onpush-strategy">
           <a class="nav-link" href="#">OnPush</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-<router-outlet></router-outlet>
+{{render()}}
+<div class="container mt-2" >
+  <router-outlet></router-outlet>
+</div>

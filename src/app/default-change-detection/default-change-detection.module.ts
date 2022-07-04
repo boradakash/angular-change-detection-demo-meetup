@@ -5,17 +5,16 @@ import { DefaultChangeDetectionRoutingModule } from './default-change-detection-
 import { PostComponent } from './post/post.component';
 import { PostsComponent } from './posts/posts.component';
 import { CommentsComponent } from './comments/comments.component';
-
+import { DemoExample1Component } from './demo-example1/demo-example1.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     PostComponent,
     PostsComponent,
-    CommentsComponent
+    CommentsComponent,
+    DemoExample1Component,
   ],
-  imports: [
-    CommonModule,
-    DefaultChangeDetectionRoutingModule
-  ]
+  imports: [CommonModule, FormsModule, DefaultChangeDetectionRoutingModule],
 })
-export class DefaultChangeDetectionModule { }
+export class DefaultChangeDetectionModule {}

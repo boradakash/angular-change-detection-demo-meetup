@@ -1,0 +1,14 @@
+<div class="parent-component p-5">
+  <p>Parent component</p>
+  <h1>{{ title }}</h1>
+  <div class="py-2">
+    <input class="form-control" [(ngModel)]="title" />
+  </div>
+  <button type="button" class="btn btn-primary" (click)="changeTitle()">
+    Change Title
+  </button>
+  <div class="my-5">
+    <app-comments></app-comments>
+  </div>
+</div>
+

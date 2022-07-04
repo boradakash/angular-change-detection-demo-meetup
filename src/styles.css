@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 .highlight {
-  background-color: #ffff00;
+  background-color: cyan;
+  display: block;
+}
+.highlight-yellow {
+  background-color: yellow;
   display: block;
 }

@@ -1,9 +1,17 @@
-import { Component, ElementRef, Input, NgZone, OnInit } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  Input,
+  NgZone,
+  OnInit,
+} from '@angular/core';
 
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PostComponent implements OnInit {
   @Input() post: any;
@@ -17,6 +25,7 @@ export class PostComponent implements OnInit {
   ngOnInit() {}
 
   ngAfterViewChecked(): void {
+    console.log('ngAfterViewChecked');
     this.zone.runOutsideAngular(() => {
       this.el.nativeElement.classList.add('highlight');
       setTimeout(() => {

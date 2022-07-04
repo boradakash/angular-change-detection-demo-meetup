@@ -9,6 +9,6 @@ export class PostsService {
   constructor(private http: HttpClient) {}
 
   getPostList(): Observable<any[]> {
-    return this.http.get<any[]>('posts.json');
+    return this.http.get<any[]>('/assets/posts.json');
   }
 }

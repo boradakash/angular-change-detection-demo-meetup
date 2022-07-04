@@ -10,10 +10,12 @@ export class PostsComponent implements OnInit {
   posts: any[] = [];
 
   constructor(private postsService: PostsService) {}
-
-  ngOnInit() {
+  ngOnInit(): void {
     this.postsService.getPostList().subscribe((posts: any[]) => {
       this.posts = posts;
     });
+  }
+  ngAfterViewChecked() {
+  
   }
 }

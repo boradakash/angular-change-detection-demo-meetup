@@ -11,5 +11,7 @@ export class PostsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+render(){
+  console.log("Render Posts Comp")
+}
 }
