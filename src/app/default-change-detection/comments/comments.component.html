@@ -1,6 +1,10 @@
 <div class="child-component">
   <p>Child component</p>
-  <input class="form-control" [(ngModel)]="comments" placeholder="Add Comment" />
+  <ul>
+    <li *ngFor="let c of comments">{{c.text}}</li>
+  </ul>
+  <button class="btn btn-primary" (click)="like()">Like</button>
   <div>{{ render() }}</div>
+  <app-comments-child></app-comments-child>
   <!-- <app-demo-example1-gran-child></app-demo-example1-gran-child> -->
 </div>

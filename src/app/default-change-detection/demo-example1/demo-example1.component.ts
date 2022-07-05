@@ -14,9 +14,16 @@ import {
 export class DemoExample1Component implements OnInit {
   title: String = 'Angular Change Detection Demo';
   constructor(private el: ElementRef, private zone: NgZone) {}
-
-  ngOnInit(): void {}
+  counter = 0;
+  ngOnInit(): void {
+    setInterval(() => {
+      this.counter = this.counter + 1;
+    }, 1000);
+  }
   changeTitle() {
     this.title = 'Title Changed';
+  }
+  render() {
+    console.log('Render');
   }
 }

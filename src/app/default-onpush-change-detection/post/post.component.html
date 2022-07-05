@@ -1,7 +1,17 @@
-<div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">{{post.title}}</h5>
-      <p class="card-text">{{post.body}}</p>
+<div class="parent-component p-5">
+    <p>Parent component</p>
+    <h1>{{ post.title }}</h1>
+    <p>{{post.body}}</p>
+    <div class="py-2">
+      <input class="form-control" [(ngModel)]="title" />
     </div>
-    <app-comments [comments]="post.comments" (addComment)="addComment(post, $event)"></app-comments>
+    <!-- <button type="button" class="btn btn-primary" (click)="changeTitle()">
+      Change Title
+    </button> -->
+    <div class="my-5">
+      <app-comments [comments]="post.comments"></app-comments>
+    </div>
   </div>
+  {{render()}}
+  
+  

@@ -1,14 +1,15 @@
 <div class="parent-component p-5">
     <p>Parent component</p>
-    <h1>{{ title }}</h1>
+    <h1>{{ post.title }}</h1>
+    <p>{{post.body}}</p>
     <div class="py-2">
       <input class="form-control" [(ngModel)]="title" />
     </div>
-    <button type="button" class="btn btn-primary" (click)="changeTitle()">
+    <!-- <button type="button" class="btn btn-primary" (click)="changeTitle()">
       Change Title
-    </button>
+    </button> -->
     <div class="my-5">
-      <app-comments></app-comments>
+      <app-comments [comments]="post.comments"></app-comments>
     </div>
   </div>
   {{render()}}

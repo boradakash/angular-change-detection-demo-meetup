@@ -1,10 +1,10 @@
-<ul class="list-group">
-    <li class="list-group-item active">Comments</li>
-    <li class="list-group-item" *ngFor="let comment of comments">
-      {{comment.text}}
-    </li>
-    <li class="list-group-item">
-      <input [(ngModel)]="newComment" />
-      <button [disabled]="!newComment" (click)="addComment.emit(newComment);newComment=''">+</button>
-    </li>
+<div class="child-component">
+  <p>Child component</p>
+  <ul>
+    <li *ngFor="let c of comments">{{c.text}}</li>
   </ul>
+  <button class="btn btn-primary" (click)="like()">Like</button>
+  <div>{{ render() }}</div>
+  <app-comments-child></app-comments-child>
+  <!-- <app-demo-example1-gran-child></app-demo-example1-gran-child> -->
+</div>

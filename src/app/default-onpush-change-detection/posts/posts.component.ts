@@ -8,14 +8,13 @@ import { PostsService } from 'src/app/posts.service';
 })
 export class PostsComponent implements OnInit {
   posts: any[] = [];
-
   constructor(private postsService: PostsService) {}
   ngOnInit(): void {
     this.postsService.getPostList().subscribe((posts: any[]) => {
       this.posts = posts;
     });
   }
-  ngAfterViewChecked() {
-  
+  render() {
+    console.log('Render Posts Comp');
   }
 }

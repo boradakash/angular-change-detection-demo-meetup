@@ -1,4 +1,9 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  Input,
+  OnInit,
+} from '@angular/core';
 
 @Component({
   selector: 'app-comments',
@@ -6,10 +11,15 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   styleUrls: ['./comments.component.css'],
 })
 export class CommentsComponent implements OnInit {
+  @Input() comments: any[] = [];
+  comment: string = '';
+
   constructor() {}
   ngOnInit(): void {}
-  comments: string = '';
+  like() {
+    console.log('like');
+  }
   render() {
-    console.log('Render Comment Component');
+    console.log('Render Comment List Component');
   }
 }

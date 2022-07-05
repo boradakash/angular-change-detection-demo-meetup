@@ -5,17 +5,16 @@ import { OnpushChangeDetectionRoutingModule } from './onpush-change-detection-ro
 import { CommentsComponent } from './comments/comments.component';
 import { PostsComponent } from './posts/posts.component';
 import { PostComponent } from './post/post.component';
-
+import { CommentsChildComponent } from './comments-child/comments-child.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    CommentsComponent,
+    PostComponent,
     PostsComponent,
-    PostComponent
+    CommentsComponent,
+    CommentsChildComponent,
   ],
-  imports: [
-    CommonModule,
-    OnpushChangeDetectionRoutingModule
-  ]
+  imports: [CommonModule,FormsModule, OnpushChangeDetectionRoutingModule],
 })
-export class OnpushChangeDetectionModule { }
+export class OnpushChangeDetectionModule {}
