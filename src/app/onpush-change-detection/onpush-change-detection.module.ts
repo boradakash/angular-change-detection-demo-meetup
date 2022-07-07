@@ -7,6 +7,8 @@ import { PostsComponent } from './posts/posts.component';
 import { PostComponent } from './post/post.component';
 import { CommentsChildComponent } from './comments-child/comments-child.component';
 import { FormsModule } from '@angular/forms';
+import { Demo2Component } from './demo2/demo2.component';
+import { Demo2NewsletterComponent } from './demo2-newsletter/demo2-newsletter.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { FormsModule } from '@angular/forms';
     PostsComponent,
     CommentsComponent,
     CommentsChildComponent,
+    Demo2Component,
+    Demo2NewsletterComponent,
   ],
   imports: [CommonModule,FormsModule, OnpushChangeDetectionRoutingModule],
 })

@@ -16,9 +16,9 @@ export class DemoExample1Component implements OnInit {
   constructor(private el: ElementRef, private zone: NgZone) {}
   counter = 0;
   ngOnInit(): void {
-    setInterval(() => {
-      this.counter = this.counter + 1;
-    }, 1000);
+    // setInterval(() => {
+    //   this.counter = this.counter + 1;
+    // }, 1000);
   }
   changeTitle() {
     this.title = 'Title Changed';

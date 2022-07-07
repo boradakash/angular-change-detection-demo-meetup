@@ -23,6 +23,25 @@ const routes: Routes = [
         (m) => m.OnpushChangeDetectionModule
       ),
   },
+  {
+    path: 'cell-flip',
+    loadChildren: () =>
+      import('./cell-flip/cell-flip.module').then((m) => m.CellFlipModule),
+  },
+  {
+    path: 'cell-flip-onpush',
+    loadChildren: () =>
+      import('./cell-flip-onpush/cell-flip-onpush.module').then(
+        (m) => m.CellFlipOnpushModule
+      ),
+  },
+  {
+    path: 'change-detector-ref',
+    loadChildren: () =>
+      import('./change-detector-ref/change-detector-ref.module').then(
+        (m) => m.ChangeDetectorRefModule
+      ),
+  },
   { path: '**', redirectTo: 'default-strategy' },
 ];
 

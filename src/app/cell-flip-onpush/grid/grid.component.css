@@ -1,0 +1,13 @@
+.grid {
+    padding-top: 50px;
+
+    width: 900px;
+    display: block;
+  
+    position:absolute;
+    left:170px;
+    top: 30px;
+  
+    transform: rotateX(0deg) rotateY(10deg) rotateZ(0deg);
+    transform-style: preserve-3d;
+  }
