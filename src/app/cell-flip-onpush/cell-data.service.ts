@@ -6,7 +6,7 @@ import * as _ from 'lodash';
   providedIn: 'root',
 })
 export class CellDataService {
-  readonly TOTAL: number = 500;
+  readonly TOTAL: number =500;
 
   private currentState: IGrid;
 

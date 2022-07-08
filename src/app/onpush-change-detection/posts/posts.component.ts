@@ -2,8 +2,11 @@ import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
+  ElementRef,
+  NgZone,
   OnInit,
 } from '@angular/core';
+import { hightlightDiv } from 'src/app/highlight';
 import { PostsService } from 'src/app/posts.service';
 
 @Component({
@@ -16,7 +19,9 @@ export class PostsComponent implements OnInit {
   posts: any[] = [];
   constructor(
     private postsService: PostsService,
-    private cd: ChangeDetectorRef
+    private cd: ChangeDetectorRef,
+    private el: ElementRef,
+    private zone: NgZone
   ) {}
   ngOnInit(): void {
     this.postsService.getPostList().subscribe((posts: any[]) => {
@@ -25,6 +30,7 @@ export class PostsComponent implements OnInit {
     });
   }
   render() {
+    hightlightDiv(this.el, this.zone);
     console.log('Render Posts Comp');
   }
 }

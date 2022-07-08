@@ -4,7 +4,7 @@ import {
   ElementRef,
   NgZone,
 } from '@angular/core';
-import { hightlight } from '../highlight';
+import { hightlight } from '../../highlight';
 
 @Component({
   selector: 'app-one',

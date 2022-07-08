@@ -1,5 +1,5 @@
-import { Component, ElementRef, NgZone } from '@angular/core';
-import { hightlight } from '../highlight';
+import { ChangeDetectionStrategy, Component, ElementRef, NgZone } from '@angular/core';
+import { hightlight } from '../../highlight';
 
 @Component({
   selector: 'app-four',
@@ -8,7 +8,7 @@ import { hightlight } from '../highlight';
      <a>Cmp4</a>
   `,
   styles: [
-  ]
+  ],
 })
 export class FourComponent {
 

@@ -1,9 +1,9 @@
-
-<div class="container row ">
+<div class="container row comp p1">
+  <h1>Default + OnPush</h1>
   <div class="row">
     <div class="col-md-4" *ngFor="let post of posts">
       <app-post [post]="post"></app-post>
     </div>
   </div>
+  {{ render() }}
 </div>
-{{ render() }}

@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, NgZone, OnInit } from '@angular/core';
+import { hightlight, hightlightDiv } from 'src/app/highlight';
 
 @Component({
   selector: 'app-comments-child',
@@ -7,10 +8,11 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 })
 export class CommentsChildComponent implements OnInit {
   title: string = '';
-  constructor() {}
+  constructor(private el: ElementRef, private zone: NgZone) {}
 
   ngOnInit(): void {}
   render() {
+    hightlightDiv(this.el, this.zone);
     console.log('Render Add Comment Component');
   }
 }

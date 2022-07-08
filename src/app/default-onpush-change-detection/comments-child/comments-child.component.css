@@ -4,3 +4,33 @@
     margin-top: 20px;;
   }
   
+  .input {
+    margin-top: 0;
+    padding: 4px 12px 8px 12px;
+}
+
+.input img {
+  width: 32px;
+  height: 32px;
+  background-image: url(https://heatherchristenaschmidt.files.wordpress.com/2011/09/facebook_no_profile_pic2-jpg.gif);
+  background-size: cover;
+  background-position: center;
+  border: none;
+  position: absolute;
+}
+
+
+.input textarea {
+  background: #fff;
+  border: 1px solid #bdc7d8;
+  box-sizing: border-box;
+  cursor: text;
+  width: calc(100% - 40px);
+  margin-left: 40px;
+  padding: 7px;
+  font-family: helvetica;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  height: 32px;
+}

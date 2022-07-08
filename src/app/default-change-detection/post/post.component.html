@@ -1,17 +1,36 @@
-<div class="parent-component p-5">
-    <p>Parent component</p>
-    <h1>{{ post.title }}</h1>
-    <p>{{post.body}}</p>
-    <div class="py-2">
-      <input class="form-control" [(ngModel)]="title" />
-    </div>
-    <!-- <button type="button" class="btn btn-primary" (click)="changeTitle()">
-      Change Title
-    </button> -->
-    <div class="my-5">
-      <app-comments [comments]="post.comments"></app-comments>
+<!-- <div class="parent-component p-3 comp p2">
+  <p>Parent component</p>
+  <h1>{{ post.title }}</h1>
+  <p>{{post.body}}</p>
+  <div class="py-2">
+    <input class="form-control" [(ngModel)]="title" />
+  </div>
+  <div class="my-5">
+    <app-comments [comments]="post.comments"></app-comments>
+  </div>
+</div>
+{{render()}} -->
+
+
+
+
+<div class="parent-component p-3 comp p2">
+  <div class="creator"><img>
+    <div>
+      <p>Mark Zuckerberg</p>
+      <p>
+        4h </p>
     </div>
   </div>
+  <p class="message">Omg it's snowing outside!</p>
+  <div class="py-2">
+    <input class="form-control" [(ngModel)]="title" />
+  </div>
+  <div class="bar">
+    <p class="action-button">Like!</p>
+    <p class="action-button">Comment</p>
+    <p class="action-button">Share</p>
+  </div>
   {{render()}}
-  
-  
+  <app-comments [comments]="post.comments"></app-comments>
+</div>

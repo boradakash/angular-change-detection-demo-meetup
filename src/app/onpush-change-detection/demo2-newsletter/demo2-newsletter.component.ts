@@ -11,7 +11,7 @@ import {
   selector: 'app-demo2-newsletter',
   templateUrl: './demo2-newsletter.component.html',
   styleUrls: ['./demo2-newsletter.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+//  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Demo2NewsletterComponent implements OnInit {
   constructor() {}

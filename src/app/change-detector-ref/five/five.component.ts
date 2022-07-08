@@ -1,5 +1,5 @@
 import { Component, ElementRef, NgZone, OnInit } from '@angular/core';
-import { hightlight } from '../highlight';
+import { hightlight } from '../../highlight';
 
 @Component({
   selector: 'app-five',

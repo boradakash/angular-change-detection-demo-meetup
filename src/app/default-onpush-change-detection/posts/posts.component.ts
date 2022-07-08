@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, NgZone, OnInit } from '@angular/core';
+import { hightlightDiv } from 'src/app/highlight';
 import { PostsService } from 'src/app/posts.service';
 
 @Component({
@@ -8,13 +9,18 @@ import { PostsService } from 'src/app/posts.service';
 })
 export class PostsComponent implements OnInit {
   posts: any[] = [];
-  constructor(private postsService: PostsService) {}
+  constructor(
+    private postsService: PostsService,
+    private el: ElementRef,
+    private zone: NgZone
+  ) {}
   ngOnInit(): void {
     this.postsService.getPostList().subscribe((posts: any[]) => {
       this.posts = posts;
     });
   }
   render() {
+    hightlightDiv(this.el, this.zone);
     console.log('Render Posts Comp');
   }
 }

@@ -1,4 +1,4 @@
-<div class="child-component">
+<!-- <div class="child-component comp p3">
   <p>Child component</p>
   <ul>
     <li *ngFor="let c of comments">{{c.text}}</li>
@@ -6,5 +6,31 @@
   <button class="btn btn-primary" (click)="like()">Like</button>
   <div>{{ render() }}</div>
   <app-comments-child></app-comments-child>
-  <!-- <app-demo-example1-gran-child></app-demo-example1-gran-child> -->
+</div> -->
+
+
+<div class="comment-section child-component comp p3">
+  <div class="single-comment"><img>
+    <div class="single-container"><span>Elon Musk</span><span>Mark, we have windows...</span></div>
+    <div class="buttons">
+      <p class="action-button" (click)="like()">Like</p>
+      <p class="action-button">Reply</p>
+      <p>
+        3h ago
+      </p>
+    </div>
+  </div>
+  <div class="single-comment"><img>
+    <div class="single-container"><span>Mark Zuckerberg</span><span>Shut up Bruce</span></div>
+    <div class="buttons">
+      <p class="action-button" (click)="like()">Like</p>
+      <p class="action-button">Reply</p>
+      <p>
+        2h ago
+      </p>
+    </div>
+    {{ render() }}
+    <app-comments-child></app-comments-child>
+
+  </div>
 </div>

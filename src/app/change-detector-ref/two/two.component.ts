@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, DoCheck, ElementRef, NgZone, OnInit } from '@angular/core';
-import { hightlight } from '../highlight';
+import { hightlight } from '../../highlight';
 
 @Component({
   selector: 'app-two',
@@ -8,6 +8,8 @@ import { hightlight } from '../highlight';
           <a>Cmp2          
            <br><h6 (click)="cd.detectChanges()">[detectChanges()]</h6>
            <br><h6 (click)="cd.markForCheck()">[markForCheck()]</h6>
+           <br><h6 (click)="cd.detach()">[detach()]</h6>
+           <br><h6 (click)="cd.reattach()">[reattach()]</h6>
           </a>
 
 <ul>

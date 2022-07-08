@@ -3,3 +3,72 @@
     padding: 20px;
   }
   
+  
+
+  .comment-section {
+    background-color: #f6f7f9;
+    margin: 0;
+}
+
+.single-comment:first-of-type {
+  border-top: 1px solid #e1e2e3;
+  padding-top: 12px;
+}
+
+.single-comment {
+  padding: 0 0 0 12px;
+  margin: 0;
+}
+
+.single-comment:first-of-type img {
+  background-image: url(http://static.srcdn.com/slir/w730-h383-q90-c730:383/wp-content/uploads/Batman-Movies-Worst-Moments.jpg);
+}
+
+.single-comment img {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-image: url(https://heatherchristenaschmidt.files.wordpress.com/2011/09/facebook_no_profile_pic2-jpg.gif);
+  background-size: cover;
+  background-position: center;
+  border: none;
+}
+
+.single-comment .single-container {
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+.single-comment .buttons {
+  margin-top: 0;
+  padding-left: 40px;
+}
+
+.single-comment .single-container span:first-of-type {
+  cursor: pointer;
+  font-weight: bold;
+  color: #365899;
+  font-size: 12px;
+  margin: 0;
+}
+
+.single-comment .single-container span {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.single-comment .buttons p {
+  display: inline-block;
+  color: #365899;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 12px;
+  margin-right: 8px;
+  margin-top: 5px;
+}
+
+.single-comment .buttons p:last-of-type {
+  color: #90949c;
+  cursor: auto;
+  text-decoration: none;
+}

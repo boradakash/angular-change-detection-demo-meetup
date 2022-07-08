@@ -1,11 +1,12 @@
-<div class="p-3">
+<div class="p-3 comp p1">
   <a routerLink="./demo">Basic Demo</a>
-</div>
-<div class="container row">
-  <div class="row">
-    <div class="col-md-4" *ngFor="let post of posts">
-      <app-post [post]="post"></app-post>
+
+  <div class="container row">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let post of posts">
+        <app-post [post]="post"></app-post>
+      </div>
     </div>
   </div>
+  {{ render() }}
 </div>
-{{ render() }}

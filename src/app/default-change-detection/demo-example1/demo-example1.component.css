@@ -1,3 +1,84 @@
 .parent-component {
   border: 1px solid #ccc;
 }
+
+
+
+
+
+
+
+.creator {
+  position: relative;
+}
+
+.creator div {
+  display: inline-block;
+  margin-left: 60px;
+}
+.creator img {
+  width: 40px;
+  height: 40px;
+  background-image: url(http://cp91279.biography.com/1000509261001/1000509261001_1822909398001_BIO-Biography-29-Innovators-Mark-Zuckerberg-115956-SF.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 12px 0 0 12px;
+  position: absolute;
+}
+
+.creator div p:first-of-type {
+  cursor: pointer;
+  font-weight: bold;
+  color: #365899;
+}
+
+.creator div p:last-of-type {
+  font-size: 12px;
+  color: #90949c;
+  margin-top: -10px;
+}
+.creator div p {
+  font-size: 14px;
+}
+
+.message {
+  font-size: 14px;
+  margin-top: 8px;
+  padding: 0 12px;
+  line-height: 18px;
+}
+
+.bar {
+  width: calc(100% - 24px);
+  border-top: 1px solid #e5e5e5;
+  margin: 0 12px;
+}
+
+.bar .action-button:first-of-type {
+  margin: 0;
+}
+
+.bar .action-button {
+  margin-left: 20px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  color: #7f7f7f;
+  cursor: pointer;
+}
+
+.bar .action-button:first-of-type:before {
+  content: "";
+  background-position: -47px -164px;
+}
+
+.bar .action-button:before {
+  content: "";
+  background-image: url(https://www.facebook.com/rsrc.php/v2/yo/r/7-oMGl7sBZ-.png);
+  display: inline-block;
+  height: 14px;
+  margin: 0 6px -3px 0;
+  width: 14px;
+  background-repeat: no-repeat;
+  background-size: auto;
+}

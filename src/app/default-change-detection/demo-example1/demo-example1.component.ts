@@ -5,6 +5,7 @@ import {
   NgZone,
   OnInit,
 } from '@angular/core';
+import { hightlightDiv } from 'src/app/highlight';
 
 @Component({
   selector: 'app-demo-example1',
@@ -24,6 +25,7 @@ export class DemoExample1Component implements OnInit {
     this.title = 'Title Changed';
   }
   render() {
+    hightlightDiv(this.el, this.zone);
     console.log('Render');
   }
 }

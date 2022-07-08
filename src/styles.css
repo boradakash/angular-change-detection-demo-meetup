@@ -223,3 +223,32 @@ right connector from last child*/
       box-shadow: 0 0 20px #c00;
   }
 }
+
+.comp {
+  background-color: #fff;
+}
+
+.comp.checked {
+  background: cyan;
+}
+
+.comp.checked.p1 {
+  background: #DFBB9D;
+}
+
+.comp.checked.p2 {
+  background: #F7E2D6;
+}
+
+.comp.checked.p3 {
+  background: #9DD6DF;
+}
+
+.comp.checked.p4 {
+  background: #A084CF;
+}
+
+
+
+
+

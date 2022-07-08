@@ -1,13 +1,31 @@
-<div class="parent-component p-5">
-  <p>Parent component</p>
-  <h1>{{ title }}</h1>
-  {{render()}}
+<div class="parent-component p-5 comp">
+
+  
   <div class="py-2">
-    <input class="form-control" [(ngModel)]="title" />
+    <input class="form-control" [(ngModel)]="title" placeholder="What's on you mind?" />
   </div>
   <button type="button" class="btn btn-primary" (click)="changeTitle()">
-    Change Title
+    Post
   </button>
+  <br/>  
+  <div class="creator pt-4"><img>
+    <div>
+      <p>Mark Zuckerberg</p>
+      <p>
+        4h </p>
+    </div>
+  </div>
+
+  
+  <p class="message">{{ title }}</p>
+
+  <div class="bar">
+    <p class="action-button">Like!</p>
+    <p class="action-button">Comment</p>
+    <p class="action-button">Share</p>
+  </div>
+
+  {{render()}}
   <div class="my-5">
     <app-comments></app-comments>
   </div>
