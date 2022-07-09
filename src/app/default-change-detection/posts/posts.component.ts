@@ -19,7 +19,9 @@ export class PostsComponent implements OnInit {
       this.posts = posts;
     });
   }
-
+  // getData(){
+  //   return Math.random();
+  // }
   render() {
     hightlightDiv(this.el, this.zone);
     console.log('Render Posts Comp');

@@ -19,7 +19,7 @@
 .creator img {
   width: 40px;
   height: 40px;
-  background-image: url(http://cp91279.biography.com/1000509261001/1000509261001_1822909398001_BIO-Biography-29-Innovators-Mark-Zuckerberg-115956-SF.jpg);
+  background-image: url(https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1448830269/gzcifut4c2xah95x0ewd.jpg);
   background-size: cover;
   background-position: center;
   margin: 12px 0 0 12px;
@@ -74,7 +74,7 @@
 
 .bar .action-button:before {
   content: "";
-  background-image: url(https://www.facebook.com/rsrc.php/v2/yo/r/7-oMGl7sBZ-.png);
+  background-image: url();
   display: inline-block;
   height: 14px;
   margin: 0 6px -3px 0;
